@@ -1,5 +1,9 @@
+elastic-query-service:
+  version: v1
 server:
   port: 8183
+  servlet:
+    context-path: /elastic-query-service
 elastic-query-config:
   text-field: text
 
@@ -8,3 +12,8 @@ elastic-config:
   connection-url: http://localhost:9200
   connection-timeout-ms: 5000
   socket-timeout-ms: 30000
+
+user-config:
+  username: test
+  password: test123
+  roles: USER
