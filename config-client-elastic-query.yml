@@ -26,3 +26,7 @@ springdoc:
 
 security:
   paths-to-ignore: /api-docs
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER
